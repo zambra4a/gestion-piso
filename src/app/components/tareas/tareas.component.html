@@ -1,0 +1,3 @@
+<ul class="list-group">
+  <li *ngFor="let tarea of this.tareas" class="list-group-item" [ngClass]="{'list-group-item-success' : tarea.done, 'list-group-item-danger': !tarea.done}" (click)="this.toggle(tarea)">{{tarea.nombre}}</li>
+</ul>
